@@ -50,9 +50,9 @@ table {
 
 body{
     color: rgb(0, 0, 0);
-    background: #5c5e63;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #e0e2e6, #a1a0a0);
-    background: linear-gradient(to top , #e0e4eb, #999999);
+    background: #bababb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e0e2e6, #8f8f8f);
+    background: linear-gradient(to top , #e0e4eb, #d6d6d6);
     background-repeat:round;
     font-family: 'Mulish', sans-serif;
 }
@@ -110,7 +110,7 @@ p{
 
 .link-list li a{
     display: block;
-    background: rgba(34, 33, 33, 0.25);
+    background: rgba(83, 83, 83, 0.25);
     border: solid 1px rgb(252, 251, 229);    
 
     padding: 15px  30px;
@@ -128,8 +128,8 @@ span{
     display: block;
     margin-top: 10px;
     font-family: 'Mulish', Times, serif;
-    color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px 0.5px 0px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(139, 139, 139) 0px 0.5px 0px;
     font-weight: 300;
     font-size: 14px;
 }
@@ -172,6 +172,7 @@ footer{
     margin-bottom: 30px;
     color: #000000;
     border-radius: 20px;
+
 }
 .botao:hover{
     background-color: #b6b6b6;
