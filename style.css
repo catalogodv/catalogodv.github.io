@@ -57,6 +57,9 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.imgheader{
+  max-width: 750px;
+}
 .disponivel{
   align-items: center;
   text-align: center;
