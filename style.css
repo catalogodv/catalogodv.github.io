@@ -38,6 +38,8 @@ body {
 }
 .title{
   font-family: cursive;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 .subtitle{
   align-items: center;
@@ -60,7 +62,11 @@ h1 {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  font-family: cursive;
+  font-family:cursive;
+  font-size: 43px;
+  margin-top:30px;
+  margin-bottom: 50px;
+  text-shadow: #000000 2px;
 }
 .botao{
   border-radius: 20px;
