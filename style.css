@@ -29,23 +29,41 @@ footer, header, hgroup, menu, nav, section {
 }
 body { 
   font-family: Arial, sans-serif;
-  margin: auto;
   padding: 0;
   background-position: center;
 }
 
-.porfile{
-  width: 100%;
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  height: 300px;
+  width: 400px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 20px;
 }
+
 .title{
   font-family: cursive;
   font-size: 23px;
   margin-bottom: 17px;
 }
+
+.imgheader{
+  max-width: 600px;
+}
+
 .subtitle{
   align-items: center;
   text-align: center;
@@ -58,9 +76,6 @@ body {
 h1 {
   margin: 0;
 }
-.imgheader{
-  max-width: 600px;
-}
 
 .disponivel{
   align-items: center;
@@ -69,7 +84,7 @@ h1 {
   flex-direction: column;
   font-family:cursive;
   font-size: 43px;
-  margin-top:30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-shadow: #000000 2px;
 }
@@ -153,10 +168,42 @@ footer{
   margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 500px) {
+  .profileImg {
+    width: 100%;
+  }
+
+  .disponivel {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .imgheader {
+    max-width: 400px;
+  }
+
   .products {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 376px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .imgheader {
+    max-width: 300px;
   }
 }
 
