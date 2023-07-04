@@ -27,15 +27,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body { 
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  background-position: center;
 }
+
 .porfile{
   width: 100%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 20px;
 }
@@ -59,6 +61,7 @@ h1 {
 .imgheader{
   max-width: 750px;
 }
+
 .disponivel{
   align-items: center;
   text-align: center;
@@ -79,10 +82,9 @@ h1 {
 }
 
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* opcional, ajuste o valor conforme necessário */
+    margin: 0 auto;
 }
 
 .product {
@@ -144,23 +146,17 @@ footer{
   margin-bottom: 30px;
   color: rgb(0, 0, 0);
 } 
-/* Estilos padrão */
-
-/* Estilos para dispositivos com largura de tela menor ou igual a 768px */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  /* Outras alterações de estilo desejadas para dispositivos móveis */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/* Estilos para dispositivos com largura de tela menor ou igual a 480px */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px;
+@media screen and (max-width: 600px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
   }
-
-  /* Outras alterações de estilo desejadas para dispositivos móveis com tela ainda menor */
 }
 
