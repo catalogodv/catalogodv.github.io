@@ -70,7 +70,7 @@ header {
   justify-content: center;
   flex-direction: column;
   font-size: 30px;
-  font-family: cursive;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:#000000;
 }
 h1 {
