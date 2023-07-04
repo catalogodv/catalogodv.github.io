@@ -1,17 +1,16 @@
-function sendToWhatsApp(item) {
-    // Replace 'YOUR_API_URL' with the actual URL of your WhatsApp API
-    const apiUrl = 'https://wa.me/5532999767716';
+function abrirWhatsApp(produto, preco) {
+    var data = new Date();
+    var horario = data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds();
   
-    // Replace 'YOUR_PHONE_NUMBER' with the phone number to which you want to send the message
-    const phoneNumber = '32999767716';
+    var mensagem = 'Pedido realizado às ' + horario + '\n';
+    mensagem += 'Produto: ' + produto + '\n';
+    mensagem += 'Preço: R$' + preco;
   
-    // Create the message with the item information
-    const message = `Olá! Gostaria de comprar o item: ${item}`;
+    var mensagemCodificada = encodeURIComponent(mensagem);
+    var numeroWhatsApp = '+5532999767716'; // Substitua pelo seu número de telefone
   
-    // Construct the URL for the WhatsApp API with the appropriate parameters
-    const url = `${apiUrl}?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    var url = 'https://api.whatsapp.com/send/?phone=5532999767716&text&type=phone_number&app_absent=0' + numeroWhatsApp + '&text=' + mensagemCodificada;
   
-    // Open the URL in a new tab or window to initiate the conversation in WhatsApp
-    window.open(url, '_blank');
+    window.open(url);
   }
   
