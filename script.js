@@ -9,7 +9,7 @@ function abrirWhatsApp(produto, preco) {
     var mensagemCodificada = encodeURIComponent(mensagem);
     var numeroWhatsApp = '+5532999767716'; // Substitua pelo seu número de telefone
   
-    var url = 'https://api.whatsapp.com/send/?phone=5532999767716&text&type=phone_number&app_absent=0' + numeroWhatsApp + '&text=' + mensagemCodificada;
+    var url = 'https://api.whatsapp.com/send/?phone=5532999767716' + numeroWhatsApp + '&text=' + mensagemCodificada;
   
     window.open(url);
   }
